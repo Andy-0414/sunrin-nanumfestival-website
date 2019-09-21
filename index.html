@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<style></style>
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				overflow-x: hidden;
+			}
+
+			.main {
+				width: 100vw;
+				height: 100vh;
+
+				color: white;
+				font-size: 1.6em;
+				background-color: #36afff;
+
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+			.main__content {
+				width: 40%;
+				margin: 50px;
+				color: white;
+			}
+			.main__content h1 {
+				font-size: 4em;
+			}
+			.main__image {
+				height: 50%;
+			}
+
+			.like {
+				width: 100vw;
+				height: 100vh;
+
+				color: white;
+				font-size: 2em;
+				background-color: #ff8066;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+            .like ul{
+                width: 30%;
+            }
+			.like li {
+				font-size: 1.2em;
+				margin: 40px;
+
+                display: flex;
+                align-items: center;
+			}
+			.like li img {
+				height: 100px;
+                border: 5px solid #3f464d;
+                margin-right: 20px;
+			}
+
+			.hobby {
+				width: 100vw;
+				height: 100vh;
+
+				color: white;
+				font-size: 2em;
+				background-color: #3f464d;
+
+				display: flex;
+                flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+            .hobby__list{
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 60%;
+                overflow: hidden;
+            }
+            .hobby__list p{
+                width: 300px;
+                margin: 20px;
+
+                padding: 100px 0;
+                text-align: center;
+                background-color: #2186C4;
+
+                transition: 0.5s;
+            }
+            .hobby__list p:hover{
+                transform: scale(1.1);
+            }
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<img class="main__image" src="https://upload.wikimedia.org/wikipedia/commons/3/33/SunrinInternetHighSchool.png" />
+			<div class="main__content">
+				<h1>Hello,<br />IWOP!</h1>
+				<p>
+					소프트웨어과 전문동아리 중 유일하게 웹동아리인 IWOP은 19년의 역사를 자랑하는 동아리 입니다. 우수한 수상실적을 보유하고있으며, 웹 클라이언트, 서버, 웹 게임 개발과 웹 디자인을 배울
+					수 있습니다!
+				</p>
+			</div>
+		</div>
+		<div class="like">
+			<h1>좋아하는 것</h1>
+			<ul>
+				<li><img src="http://mblogthumb3.phinf.naver.net/20160125_202/jinsancorp3383_1453727350704ERTn8_PNG/2016-01-25_22%3B08%3B50.png?type=w2" />소고기</li>
+				<li><img src="https://cdn.pixabay.com/photo/2016/05/22/16/54/barbecues-1408808_960_720.jpg" />돼지고기</li>
+				<li><img src="https://pds.joins.com/news/component/healthmedia/201505/28/15035_9396_812.jpg" alt="" />닭고기</li>
+				<li><img src="https://d2zvzzx551arcd.cloudfront.net/files/etc/2017/0614/1967208607cfbea184aebc3790e52165_FThumb.jpg" alt="" />물고기</li>
+			</ul>
+		</div>
+		<div class="hobby">
+            <h1>취미</h1>
+            <div class="hobby__list">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>Node.js</p>
+                <p>Vue.js</p>
+                <p>React</p>
+            </div>
+        </div>
+	</body>
+</html>
